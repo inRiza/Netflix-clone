@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+    <nav class="fixed w-full top-0 z-20 bg-black bg-opacity-50 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4 flex lg:flex-row md:flex-row flex-col lg:space-y-0 md:space-y-0 space-y-4 justify-between items-center">
+            <div class="text-red-600 text-3xl font-bold">NETFLIX</div>
+            <div class="hidden md:flex flex-row gap-4">
+                <a href="#" class="hover:text-gray-300">Home</a>
+                <a href="#" class="hover:text-gray-300">TV Shows</a>
+                <a href="#" class="hover:text-gray-300">My List</a>
+            </div>
+            <div class="hidden md:flex"><a href="#" class="hover:text-gray-300">Profile</a></div>
+        </div>
+    </nav>
+
+    <section class="relative h-screen">
+        <img src="./public/hero.jpg" alt="Hero Placeholder" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center z-10">
+            <div class="container mx-auto text-center space-y-1">
+                <h1 class="flex w-2/3 justify-center mx-auto text-5xl font-semibold p-6">Unlimited movies, TV shows and more</h1>
+                <h2 class="text-xl font-light">Watch anywhere, Cancel anytime.</h2>
+                <h3 class="text-md font-light">Ready to watch? Enter your email to create or restart your membership.</h3>
+                <div class="flex flex-row gap-2 justify-center p-4">
+                    <input type="text" class="bg-white rounded-[4px] p-3 w-1/4 text-[16px] shadow-md shadow-white/10 font-light text-black"
+                    placeholder="Enter your email...">
+                    <button class="overflow-hidden bg-red-600 p-2 w-40 rounded-[4px] font-normal hover:bg-red-700">Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
