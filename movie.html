@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Movies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+    <nav class="fixed w-full top-0 z-20 bg-black bg-opacity-50 backdrop-blur-sm">
+        <div class="container mx-auto px-4 py-4 flex lg:flex-row md:flex-row flex-col lg:space-y-0 md:space-y-0 space-y-4 justify-between items-center">
+            <div class="text-red-600 text-3xl font-bold">NETFLIX</div>
+            <div class="hidden md:flex flex-row gap-4">
+                <a href="./index.html" class="hover:text-gray-300">Home</a>
+                <a href="./movie.html" class="hover:text-gray-300">Movies</a>
+                <a href="#" class="hover:text-gray-300">My List</a>
+            </div>
+            <div class="hidden md:flex"><a href="#" class="hover:text-gray-300">Profile</a></div>
+        </div>
+    </nav>
+
+    <section class="flex items-start min-h-screen">
+        <img src="./public/batman.jpg" alt="Batman coy" class="w-1/2 h-2/3 object-cover justify-center pt-20 md:pl-20 pl-10">
+        <div class="flex-2 pt-24 pl-16">
+            <div class="flex flex-col gap-y-4">
+                <h1 class="text-4xl md:text-6xl font-semibold">The Batman</h1>
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl font-bold">4.5</span>
+                    <span class="text-yellow-200 text-2xl">★★★★☆</span>
+                </div>
+                <h2 class="text-sm font-light w-4/5">In the gritty, rain-soaked streets of Gotham City, The Batman (2022), directed by Matt Reeves, delivers a dark, noir-driven take on the iconic DC hero. 
+                Robert Pattinson stars as a young, brooding Bruce Wayne, two years into his vigilante crusade as Batman, driven by vengeance to rid the city of crime.</h2>
+                <div class="flex pt-4 gap-2">
+                    <button class="bg-red-600 text-white w-1/2 rounded-md hover:bg-red-800 p-2">Watch Now</button>
+                    <button class="bg-gray-800 text-white rounded-md w-1/6 hover:bg-gray-900">Add</button>
+                </div> 
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
